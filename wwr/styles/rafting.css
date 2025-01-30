@@ -6,6 +6,7 @@
     margin: 100px;
 }
 
+
 h1 {
     font-family: "Questrial", serif;
     font-weight: 400;
@@ -50,6 +51,7 @@ a {
 	padding: 0.65rem;
 	box-shadow: 0 0 30px #111;
 	opacity: 0.9;
+    font-size: 23px;
 }
 
 .hero article img {
@@ -66,9 +68,95 @@ a {
 }
 
 header img {
+    display: block;
     background:var(--primary-color);
 	border: 1px solid #000;
 	padding: 0.65rem;
 	box-shadow: 0 0 30px #111;
 	opacity: 0.9;
 }
+
+header {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+
+.links {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    column-gap: 100px;
+    column-width: 200px;
+}
+
+.links a {
+	color: var(--accent1-color);
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.5rem;
+    border: 1px solid var(--accent1-color);
+	text-align: center;
+    box-shadow: 0 0 20px var(--accent1-color);
+    background-color: var(--secondary-color);
+}
+
+.links li {
+	flex: 1 1 auto;
+}
+
+
+    
+
+
+.history {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.history p1 {
+    flex-wrap: wrap;
+    order: -1;
+}
+
+section h2 {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: start;
+    align-content: center;
+
+}
+
+.adventure img {
+    max-width: 220px;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 25px;
+}
+
+.figure1 {
+    order: 1;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
