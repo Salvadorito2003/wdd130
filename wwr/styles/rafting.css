@@ -90,11 +90,14 @@ header {
     align-content: space-between;
     column-gap: 100px;
     column-width: 200px;
+    justify-content: space-around;
 }
 
 .links a {
-	color: var(--accent1-color);
-	padding: 15px;
+	color: #5e5e5e;
+	padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 	text-decoration: none;
 	font-size: 1.5rem;
     border: 1px solid var(--accent1-color);
@@ -123,6 +126,11 @@ header {
 .history p1 {
     flex-wrap: wrap;
     order: -1;
+}
+
+.history img {
+    padding-left: 100px;
+    padding-top: 30px;
 }
 
 section h2 {
@@ -156,7 +164,142 @@ figcaption {
 
 footer{
     display: flex;
+    flex: 1 1;
     flex-direction: row;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.wwremployees {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.wwremployees img {
+    Width: 200px;
+    height:auto;
+    margin: 10px;
+    padding: 15px;
+}
+
+.contactinformation {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-around;
+    justify-self: center;
+    /* padding: 0 100px; */
+    width: 90%;
+    gap: 50px;
+}
+
+.infobox {
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: var(--secondary-color);
+    text-align: start;
+    align-items: center;
+    color: #7c7b7b;
+    width: 90%;
+}
+
+.map {
+    order: 2;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: var(--secondary-color);
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 90%;
+}
+
+.wwrinformation h1 {
+    text-align: center;
+}
+
+.contactus legend {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: var(--accent1-color);
+}
+
+.contactus {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: antiquewhite;
+    width: 80%;
+}
+
+input[type="text"] {
+    font-size: 25px;
+}
+
+.message {
+    display:grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-evenly;
+    font-size: 20px;
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 80%;
+}
+
+.options {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    font-size: 25px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 70px;
+}
+
+button {
+    margin:5px;
+    background-color: var(--primary-color);
+    color:rgb(0, 0, 0);
+    border:#000;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 25px;
+    margin: auto;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 90%;
+    height: 200px;
+}
